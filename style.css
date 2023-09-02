@@ -169,22 +169,29 @@ body {
     width: 69px;
 }
 
-.container-numbered article div h4 {
+.container-numbered article div h4, .data-card h4{
     font-weight: 700;
     line-height: 23.38px;
     letter-spacing: -1px;
     color: #323851;
 }
 
-.container-numbered article p {
+.container-numbered article p, .data-card p {
     color: #B3B2B7;
     font-weight: 500;
     line-height: 25.52px;
+}
+
+.container-numbered article p {
     margin: 0 0 0 5.8rem;
 }
 
+.data-card p {
+    text-align: center;
+}
+
 .container-players {
-    margin: 2rem;
+    margin: 5rem 2rem;
 }
 
 .container-players h3 {
@@ -193,6 +200,31 @@ body {
     font-weight: 700;
     line-height: 61.41px;
     text-align: center;
+}
+
+.container-cards {
+    display: flex;
+    margin: 2rem;
+}
+
+.card {
+    width: 445px;
+    position: relative;
+    padding: 3rem 0 0;
+}
+
+.card img {
+    position: absolute;
+    top: 1.2rem;
+    left: 11.5rem;
+}
+
+.data-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem 1rem;
+    background-color: #FAFAFA;
 }
 
 .container-footer {
@@ -272,11 +304,6 @@ body {
         gap: 1.5rem;
     }
 
-    /* .btn-contact, .container-nav {
-        display: none;
-
-    } */
-
     .hide-elements {
         display: none;
     }
@@ -298,8 +325,6 @@ body {
     }
 
     .container-numbered article p {
-        /* font-weight: 500;
-        line-height: 25.52px; */
         margin: 0 1rem;
     }
 }
