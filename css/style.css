@@ -138,7 +138,7 @@ body {
 
 .container-numbered {
     background-color: #FAFAFA;
-    padding: 3rem 2.5rem;
+    padding: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,13 +147,13 @@ body {
 }
 
 .container-numbered article {
-    width: 530px;
+    width: 520px;
 }
 
 .container-numbered article div {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-bottom: .5rem;
 }
 
@@ -183,7 +183,7 @@ body {
 }
 
 .container-numbered article p {
-    margin: 0 0 0 5.8rem;
+    margin: 0 0 0 5.3rem;
 }
 
 .data-card p {
