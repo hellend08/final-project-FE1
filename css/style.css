@@ -40,6 +40,26 @@ body {
     cursor: pointer;
 }
 
+.btn-white {
+    color: rgba(139, 72, 191, 1);
+    background: rgba(255, 255, 255, 1);
+    width: 134px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    gap: 0.8rem;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    font-size: 13.18px;
+    font-weight: 500;
+}
+
+.btn-white:hover {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(139, 72, 191, 1);
+    cursor: pointer;
+}
+
 .container-nav {
     display: flex;
     gap: 1.75rem;
@@ -113,6 +133,7 @@ body {
 
 .frame-purple2 {
     height: 224px;
+    padding: 2rem;
 }
 
 .frame-purple h2 {
@@ -127,7 +148,12 @@ body {
     font-weight: 700;
     line-height: 47.84px;
     letter-spacing: -0.5px;
-    width: 450px;
+    width: 500px;
+}
+
+.frame-purple2 div {
+    width: 35%;
+    text-align: right;
 }
 
 .frame-purple p {
@@ -148,6 +174,7 @@ body {
 
 .container-numbered article {
     width: 520px;
+    height: 162px;
 }
 
 .container-numbered article div {
@@ -208,7 +235,7 @@ body {
 .container-cards {
     display: flex;
     justify-content: center;
-    margin: 2rem;
+    margin: 3rem 2rem;
     flex-wrap: wrap;
 }
 
@@ -257,11 +284,11 @@ body {
     list-style: none;
 }
 
-
 .footer-nav {
     display: flex;
     gap: 3rem;
 }
+
 .icon-menu {
     display: none;
 }
@@ -269,8 +296,6 @@ body {
 .hide-elements {
     display: block;
 }
-
-
 
 .footer-bot {
     color: rgba(140, 140, 148, 1);
@@ -300,24 +325,7 @@ body {
     gap: 10px;
 }
 
-.button-go {
-    width: 7.5rem;
-    height: 2.7rem;
-    padding: 0.8rem;
-    border-radius: 3.1rem;
-    color: rgba(139, 72, 191, 1);
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
-    font-size: 1rem;
-    text-align: center;
-}
 
-
-.button-go:hover {
-    color: rgba(255, 255, 255, 1);
-    background: rgba(139, 72, 191, 1);
-    cursor: pointer;
-}
 
 .dislpay-nav {
     display: flex;
@@ -343,8 +351,11 @@ body {
     cursor: pointer;
 }
 
-
 @media screen and (max-width: 1024px) {
+
+    .container-header {
+        justify-content: space-around;
+    }
 
     .container-nav {
         gap: .75rem;
@@ -363,6 +374,17 @@ body {
         height: auto;
         padding: 4rem 3rem 4rem 1rem;
         gap: 4rem;
+    }
+
+    .frame-purple2 {
+        height: auto;
+        text-align: center;
+        padding: 2rem 6rem;
+    }
+
+    .frame-purple2 div {
+        text-align: left;
+        width: auto;
     }
     
 }
@@ -395,8 +417,13 @@ body {
         display: none;
     }
 
-    .frame-purple {
+    .frame-purple, .frame-purple2 {
         background-color: #3CDDF3;
+    }
+
+    .btn-white {
+        background-color: #232C50;
+        color: #FFFFFF;
     }
 
     .container-numbered {
