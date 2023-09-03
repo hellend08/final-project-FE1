@@ -191,7 +191,10 @@ body {
 }
 
 .container-players {
-    margin: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 0 7rem;
 }
 
 .container-players h3 {
@@ -204,11 +207,13 @@ body {
 
 .container-cards {
     display: flex;
+    justify-content: center;
     margin: 2rem;
+    flex-wrap: wrap;
 }
 
 .card {
-    width: 445px;
+    width: 380px;
     position: relative;
     padding: 3rem 0 0;
 }
@@ -216,7 +221,7 @@ body {
 .card img {
     position: absolute;
     top: 1.2rem;
-    left: 11.5rem;
+    left: 9.5rem;
 }
 
 .data-card {
