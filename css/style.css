@@ -97,7 +97,7 @@ body {
     text-align: right;
 }
 
-.frame-purple, .frame-purple2 {
+.frame-purple {
     background-color: #8B48BF;
     display: flex;
     color: #FFFFFF;
@@ -106,13 +106,24 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+.frame-purple2{
+    background-color: #8B48BF;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+
+}
+
 
 .frame-purple {
     height: 168px;
 }
 
 .frame-purple2 {
-    height: 224px;
+    height: 16rem;
 }
 
 .frame-purple h2 {
@@ -253,6 +264,7 @@ body {
     font-size: 13px;
 }
 
+
 .footer-nav li {
     list-style: none;
 }
@@ -301,10 +313,9 @@ body {
 }
 
 .button-go {
-    width: 7.5rem;
-    height: 2.7rem;
-    padding: 0.8rem;
-    border-radius: 3.1rem;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 3rem;
     color: rgba(139, 72, 191, 1);
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
@@ -414,4 +425,89 @@ body {
     .container-numbered article p {
         margin: 0 1rem;
     }
+
+    .frame-purple2 {
+        background-color: #3CDDF3;
+        display: flex;
+        color: rgba(255, 255, 255, 1);
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 40px 50px 40px 50px;
+        height: 22.8rem;
+    }
+
+    .button-go {
+        background-color: rgba(35, 44, 80, 1);
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .button-go:hover {
+        color: rgba(35, 44, 80, 1);
+        background-color: rgba(255, 255, 255, 1);
+    }   
+
+
+    .frame-purple2 h2 {
+        line-height: 47.84px;
+        letter-spacing: -0.5px;
+        text-align: center;
+}
+
+    .container-footer {
+        flex-direction: column;
+        height: 32rem;
+        padding: 2rem;
+    }    
+
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-email {
+        order: 1;
+    }
+
+    .footer-nav {
+        order: 2;
+    }
+
+    .container-icon {
+        order: 3;
+    }
+
+    .iconos {
+        order: 1;
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+    }
+    
+    .logo {
+        order: 2;
+    }
+    
+    .container-icon {
+        align-items: center;
+    }
+
+    .footer-bot {
+        color: rgba(140, 140, 148, 1);
+        height: 12rem;
+        background-color: #1E1E26;
+        justify-content: end;
+        display: flex;
+        padding-right: 5rem;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .email {
+        width: 20rem;
+}
 }
