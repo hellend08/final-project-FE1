@@ -116,7 +116,7 @@ body {
     text-align: right;
 }
 
-.frame-purple, .frame-purple2 {
+.frame-purple {
     background-color: #8B48BF;
     display: flex;
     color: #FFFFFF;
@@ -125,14 +125,26 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+.frame-purple2{
+    background-color: #8B48BF;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+
+}
+
 
 .frame-purple {
     height: 168px;
 }
 
 .frame-purple2 {
-    height: 224px;
+    /* height: 224px; */
     padding: 2rem;
+    height: 16rem;
 }
 
 .frame-purple h2 {
