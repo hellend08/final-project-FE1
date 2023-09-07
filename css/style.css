@@ -53,6 +53,11 @@ body {
     background-color: rgba(255, 255, 255, 1);
 }
 
+.btn-white::after {
+    content: '🥎';
+    padding: 2rem;
+}
+
 .btn-white:hover {
     color: rgba(255, 255, 255, 1);
     background: rgba(139, 72, 191, 1);
@@ -377,31 +382,9 @@ fieldset {
     font-size: 14px;
 }
 
-/* .container-home p::after 
-    content: '🥎';
-    position: absolute;
-    position: absolute;
-    bottom: 15.5rem;
-    left: 17.2rem; */
 
-/* .card img:hover {
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
-}
 
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
-}
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
-}
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
-} */
+
 
 
 
