@@ -53,6 +53,11 @@ body {
     background-color: rgba(255, 255, 255, 1);
 }
 
+.btn-white::after {
+    content: '🥎';
+    padding: 0 0 0 5px;
+}
+
 .btn-white:hover {
     color: rgba(255, 255, 255, 1);
     background: rgba(139, 72, 191, 1);
