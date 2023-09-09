@@ -16,10 +16,7 @@ body {
     height: 174px;
 }
 
-.logo {
-    width: 6.7rem;
-    height: 1.5rem;
-}
+
 
 .btn-purple, .btn-white {
     width: 134px;
@@ -69,17 +66,17 @@ body {
     gap: 1.75rem;
 }
 
-.container-nav li, li {
+li {
     list-style: none;
 }
 
-.container-nav a {
+.container-nav li a {
     text-decoration: none; 
     color: #242E52;
     font-size: 13px;
 }
 
-.container-nav a:hover {
+.container-nav li a:hover {
     color: rgba(36, 46, 82, 0.6);
 }
 
@@ -121,7 +118,7 @@ body {
     text-align: right;
 }
 
-.frame-purple {
+.frame-purple, .frame-purple2 {
     background-color: #8B48BF;
     display: flex;
     color: #FFFFFF;
@@ -130,17 +127,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-.frame-purple2{
-    background-color: #8B48BF;
-    display: flex;
-    color: #FFFFFF;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 6rem;
-
-}
-
 
 .frame-purple {
     height: 168px;
@@ -270,6 +256,14 @@ body {
 }
 
 .card img {
+    transition: all 1s ease-in-out;
+}
+
+.card:hover img {
+    transform: rotateY(360deg);
+}
+
+.card img {
     position: absolute;
     top: 1.2rem;
     left: 9.5rem;
@@ -311,7 +305,7 @@ body {
 
 }
 
-.nav-footer a {
+.nav-footer ul li a {
     text-decoration: none;
     color: #FFFFFF;
     line-height: 33px;
@@ -333,7 +327,7 @@ body {
     width: 100%;
 }
 
-.icons img {
+.icons li a img {
     width: 20px;
 }
 
@@ -382,12 +376,19 @@ fieldset {
     font-size: 14px;
 }
 
-.card img {
-    transition: all 1s ease-in-out;
+.logo {
+    width: 6.7rem;
+    height: 1.5rem;
+    animation: rotate 0.8s alternate 2 ease-out;
 }
 
-.card:hover img {
-    transform: rotateY(360deg);
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);;
+    }
 }
 
 @media screen and (max-width: 1024px) {
